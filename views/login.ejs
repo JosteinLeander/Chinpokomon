@@ -1,0 +1,24 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="main">
+      <h2>Logg inn</h2>
+      
+      <form action="/login" method="post">
+        <label for="email">email:</label>
+        <input type="email" name="email" required> <br> <br>
+        <label for="password">passord:</label>
+        <input type="password" name="password"> <br> <br>
+        <button type="submit">Logg inn</button> <br> <br>
+    </form>
+    <br> <br> <br>
+    <form action="/lagbruker" method="get">
+        <input type="submit" name="lagbruker" id="lagbruker" value="Lag ny bruker">
+    </form>
+
+    <%- include('./partials/footer') %>
+
+  </body>
+</html>
